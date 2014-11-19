@@ -25,19 +25,18 @@ document.getElementById("colorValue").textContent = "Click or tap to get a rando
 
 
 document.getElementById("coloredBody").addEventListener('click', function(e){
-	if(e.target.id === "coloredBody"){
-
-
-	if (randomColor === "#ffffff")
-		{
-			document.getElementById("coloreValue").style.color = "rgb(0,0,0)";
-		}
-	else
-		{
-			randomColor = getRandomColor();
-			document.getElementById("coloredBody").style.backgroundColor = randomColor;
-			document.getElementById("colorValue").textContent = randomColor;
-
-		}
+	if(e.target.id === "coloredBody")
+	{
+		if (randomColor === "#ffffff")
+			{
+				document.getElementById("coloreValue").style.color = "rgb(0,0,0)";
+			}
+		else
+			{
+				randomColor = getRandomColor();
+				document.getElementById("coloredBody").style.backgroundColor = randomColor;
+				document.getElementById("colorValue").textContent = randomColor;
+			}
 	}
 });
+
