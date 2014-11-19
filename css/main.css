@@ -68,17 +68,46 @@ body {background: #e74c3c;}
     background:#fff;
     color:#fff;
     text-align: center;
+    display: inline-block;
 }
 
-.centered {
-    color:#fff;
-
+.centeredText {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    color:#fff;
     font-size:3em;
 }
 
+.copyButton{
+    border-radius: 2px;
+    font-size: 14px;
+    height:36px;
+    width:88px;
+    background-color: #ff4081;
+    display: inline-block;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    /*border: 2px solid #e53973;*/
+    line-height: 0;
+    cursor:pointer;
+    margin-top: 1rem;
+}
+
+.centerEverything {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.copyButton p {
+    position: relative;
+    font-size: 1.1rem;
+
+}
+
+.copyButton:hover {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    background-color: #e53973;
+}
 
 
 /* ==========================================================================
