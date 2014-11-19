@@ -24,7 +24,9 @@ document.getElementById("colorValue").textContent = "Click or tap to get a rando
 
 
 
-document.getElementById("coloredBody").addEventListener('click', function(){
+document.getElementById("coloredBody").addEventListener('click', function(e){
+	if(e.target.id === "coloredBody"){
+
 
 	if (randomColor === "#ffffff")
 		{
@@ -37,4 +39,5 @@ document.getElementById("coloredBody").addEventListener('click', function(){
 			document.getElementById("colorValue").textContent = randomColor;
 
 		}
+	}
 });
