@@ -11,6 +11,7 @@ textarea {
 html {
     font-size: 1em;
     line-height: 1.4;
+    font-family: 'Lato', sans-serif;
 }
 
 ::-moz-selection {
@@ -56,6 +57,27 @@ textarea {
     padding: 0.2em 0;
 }
 
+/* ==========================================================================
+   My styles
+   ========================================================================== */
+body {background: #e74c3c;}
+
+.mainArea {
+    height:100vh;
+    width:100vw;
+    background:#fff;
+    color:#fff;
+    text-align: center;
+}
+
+.centered {
+    color:#fff;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size:3em;
+}
 
 
 
